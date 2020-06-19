@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import org.controlsfx.control.Rating?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancrelist" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeJardinController">
+   <children>
+    
+    
+ <TextField fx:id="tfrecherche" layoutX="8.0" layoutY="39.0" onKeyTyped="#rechercherNom" prefHeight="31.0" prefWidth="588.0" promptText=" recherche par nom jardin" style="-fx-background-color: #d7d9e0;">
+
+       </TextField>
+     
+      <Separator layoutY="-1.0" prefHeight="4.0" prefWidth="600.0" />
+      <TableView fx:id="jardinTable" editable="true" layoutX="6.0" layoutY="102.0" prefHeight="301.0" prefWidth="588.0" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="29.0" text="" visible="false" />
+            <TableColumn fx:id="imageColumn" prefWidth="85.0" text="Icon" />
+            <TableColumn fx:id="nomColumn" prefWidth="89.0" text="Nom" />
+            <TableColumn fx:id="adresseColumn" prefWidth="91.0" text="Adresse" />
+            <TableColumn fx:id="placeColumn" prefWidth="78.0" text="Place Dispo" />
+            <TableColumn fx:id="nombreColumn" minWidth="0.0" prefWidth="98.0" text="Nombre Enfant" />
+            <TableColumn fx:id="telColumn" prefWidth="133.0" text="Télèphone" />
+        </columns>
+      </TableView>
+ 
+      <Button fx:id="btAjout" layoutX="461.0" layoutY="410.0" mnemonicParsing="false" onAction="#ajouterRes" prefHeight="25.0" prefWidth="134.0" text="Ajouter Réservation" visible="false" />
+     <Rating fx:id="rating" layoutX="155.0" layoutY="407.0" />
+       <Button fx:id="save" layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onAction="#save_rating" prefHeight="25.0" prefWidth="134.0" text="Enregistrer rating" />
+<Label fx:id="label_rating" layoutX="387.0" layoutY="541.0" prefHeight="21.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+.tab{
+    -fx-pref-width:120;
+    -fx-pref-height:40;
+    -fx-background-color:#c332a8 ;
+}
+.tab-header-background{
+        -fx-background-color:#c332a8 ;
+
+}
+.anchore{
+    -fx-background-color:#c332a8 ;
+}
+
+
+.pagination{
+	-fx-base:pink;
+         
+}
+.pagination .toggle-button{
+	-fx-background-radius:30px;
+	-fx-padding: 0px;
+}
+.pagination .button{
+	-fx-padding: 5 15 5 16px;
+}
+.pagination .pagination-control .toggle-button:selected {   
+       -fx-background-color:#881690;
+}
+.pagination .pagination-control .button, .pagination .toggle-button {
+       -fx-pref-width: 50;
+       -fx-pref-height: 50;
+}
+/*
+.text-field , .text-area{
+    -fx-prompt-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}*/
+

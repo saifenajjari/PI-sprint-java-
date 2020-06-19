@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bp1" prefHeight="600.0" prefWidth="1093.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Acceuil_BackController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1093.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #DB7093 ;" styleClass="sidebar1" stylesheets="@stylesheet.css">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #FFB6C1;" text="  Nos Jardin" textFill="#f2f2f5">
+                     <font>
+                        <Font name="Ebrima Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        
+                        
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="id_afficherJardin" alignment="CENTER_LEFT" layoutX="10.0" layoutY="139.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficher" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        
+                        <Label text="Gestion jardins" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                   
+                      
+                  </HBox>
+                  <HBox fx:id="id_afficherReservation" alignment="CENTER_LEFT" layoutX="10.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficher" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        
+                        <Label text="Gestion Réservations" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                    
+                       
+                  </HBox>
+                  <HBox fx:id="id_ajouter_enfant" alignment="CENTER_LEFT" layoutX="10.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficher" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        
+                        <Label text="Gestion des enfants" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                    
+                       
+                  </HBox>
+                  <HBox fx:id="id_ajouter_reservation" alignment="CENTER_LEFT" layoutX="10.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficher" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                       
+                        <Label text="Liste Rating" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                    
+                        
+                  </HBox>
+
+                  <ImageView fitHeight="200.0" fitWidth="249.0">
+                     <image>
+                        <Image url="@jar.png" />
+                     </image>
+                  </ImageView>
+                  <HBox fx:id="id_retour" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficher" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                      
+                        <Label text="Retour" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                   
+                       
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="250.0" prefHeight="700.0" prefWidth="843.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="843.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="12.0" text="Logged as :" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="19.0" />
+                           </font>
+                        </Label>
+
+                        <Label fx:id="user" layoutX="133.0" layoutY="12.0" text="user name:" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="content" prefHeight="550.0" prefWidth="860.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

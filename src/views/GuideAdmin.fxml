@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="778.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GuideAdminController">
+   <children>
+      <HBox layoutX="15.0" prefHeight="49.0" prefWidth="564.0" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="298.0">
+         <children>
+            <Button fx:id="club" mnemonicParsing="false" onAction="#club" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #b5459d;" text="Club" textFill="#ffc0cb99">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="activite" mnemonicParsing="false" onAction="#activite" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #b5459d;" text="Activités" textFill="PINK">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="demandeIns" mnemonicParsing="false" onAction="#demandeIns" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #b5459d;" text="Inscriptions" textFill="PINK">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="demande" mnemonicParsing="false" onAction="#demande" prefHeight="45.0" prefWidth="142.0" style="-fx-background-color: #b5459d;" text="Demandes " textFill="PINK">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Pane layoutY="46.0" opacity="0.3" prefHeight="732.0" prefWidth="1166.0" style="-fx-background-color: pink;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="mainpane" layoutY="47.0" prefHeight="720.0" prefWidth="1166.0" />
+   </children>
+</AnchorPane>

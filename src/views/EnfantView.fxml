@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EnfantController">
+    <children>
+        <Button fx:id="addjardinBtn" layoutX="491.0" layoutY="272.0" mnemonicParsing="false" onAction="#ajouterenfant" text="Ajouter Enfant" />
+        <VBox layoutX="153.0" layoutY="24.0" prefHeight="239.0" prefWidth="430.0" spacing="4.0">
+            <children>
+                <TextField fx:id="nomText" prefHeight="35.0" prefWidth="450.0" promptText="nom" />
+                <TextField fx:id="prenomText" prefHeight="35.0" prefWidth="450.0" promptText="prenom" />
+                <TextField fx:id="ageText" prefHeight="35.0" prefWidth="450.0" promptText="age" />
+
+                <Spinner fx:id="categorie" layoutX="97.0" layoutY="110.0" prefHeight="35.0" prefWidth="450.0" />
+                <Spinner fx:id="sexe" layoutX="97.0" layoutY="138.0" prefHeight="35.0" prefWidth="450.0" />
+                <ImageView fx:id="imageload" fitHeight="44.0" fitWidth="64.0" layoutX="221.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" />
+
+            </children>
+        </VBox>
+        <VBox layoutX="20.0" layoutY="30.0" prefHeight="241.0" prefWidth="118.0" spacing="22.0">
+            <children>
+                <Label text="Nom" />
+                <Label prefHeight="19.0" prefWidth="50.0" text="Prenom" />
+                <Label text="Age" />
+                <Label text="categorie" />
+                <Label prefHeight="0.0" prefWidth="64.0" text="sexe" />
+                <Button fx:id="image" layoutX="264.0" layoutY="293.0" mnemonicParsing="false" onAction="#ajouterimage" prefHeight="25.0" prefWidth="111.0" text="choisir une image" />
+            </children>
+        </VBox>
+        <Separator layoutY="14.0" prefHeight="4.0" prefWidth="600.0" />
+
+
+    </children>
+</AnchorPane>

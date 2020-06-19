@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransportFrontController">
+   <children>
+      <AnchorPane fx:id="anchor" layoutY="89.0" prefHeight="636.0" prefWidth="828.0" />
+      <Label layoutX="167.0" layoutY="14.0" prefHeight="64.0" prefWidth="490.0" text="la liste des lignes : " textAlignment="CENTER" textFill="#d036b4">
+         <font>
+            <Font name="Bodoni MT" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="1166.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DemandeInscController">
+    <left>
+        <VBox prefHeight="650.0" prefWidth="290.0" spacing="10.0" style="-fx-background-color: #e10ab2;" styleClass="background" stylesheets="@../styles/Styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Coordonnées" textFill="PINK">
+                    <font>
+                        <Font name="Bodoni MT Italic" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="-15.0" left="80.0" right="20.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="id" promptText="Id">
+               <VBox.margin>
+                  <Insets bottom="-20.0" />
+               </VBox.margin></TextField>
+            <Label fx:id="labid" text="Activité:" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="activité" promptText="Activité">
+               <VBox.margin>
+                  <Insets bottom="-12.0" left="25.0" right="25.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Non du parent:" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="nomparent" prefHeight="30.0" prefWidth="246.0" promptText="Non du parent">
+                    <VBox.margin>
+                        <Insets bottom="-12.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Numéro de téléphone:" textFill="PINK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+            </Label>
+                <TextField fx:id="numtel" prefHeight="30.0" prefWidth="246.0" promptText="Numéro de téléphone">
+                    <VBox.margin>
+                        <Insets bottom="-13.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Email:" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="email" prefHeight="30.0" prefWidth="262.0" promptText="Email">
+                    <VBox.margin>
+                        <Insets bottom="-13.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Adresse:" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="adresse" promptText="Adresse">
+                    <VBox.margin>
+                        <Insets bottom="-7.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Photo:" textFill="PINK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+            </Label>
+                <TextField fx:id="photo" prefHeight="30.0" prefWidth="246.0" promptText="Photo">
+                    <VBox.margin>
+                        <Insets bottom="-8.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <ImageView fx:id="imgview" fitHeight="80.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="-12.0" left="65.0" right="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Age:" textFill="PINK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+            </Label>
+                <TextField fx:id="age" promptText="Age">
+                    <VBox.margin>
+                        <Insets bottom="-13.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Nombre des mois de participation:" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="nombredesmois" promptText="Nombre des mois de participation">
+                    <VBox.margin>
+                        <Insets bottom="-13.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Date début:" textFill="PINK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="date">
+               <VBox.margin>
+                  <Insets bottom="-13.0" left="25.0" right="25.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Label text="Montant à payer :" textFill="PINK">
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="montant" promptText="Montant à payer ">
+                    <VBox.margin>
+                        <Insets bottom="-13.0" left="25.0" right="25.0" />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Commentaire:" textFill="PINK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-13.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="commentaire" promptText="Commentaire">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </VBox.margin>
+            </TextField>
+                <HBox prefHeight="87.0" prefWidth="266.0" spacing="10.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <Button fx:id="refuser" mnemonicParsing="false" onAction="#refuser" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: red;" text="REFUSER" textFill="WHITE">
+                            <effect>
+                                <DropShadow blurType="ONE_PASS_BOX" color="#1965d0" />
+                            </effect>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                        </Button>
+                  <Button fx:id="accepter" mnemonicParsing="false" onAction="#accepter" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: green;" text="ACCEPTER" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                        <Button fx:id="reset" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="90.0" text="RESET">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="TOP_RIGHT" prefHeight="571.0" prefWidth="692.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="TOP_RIGHT" prefHeight="41.0" prefWidth="640.0" />
+                <TableView id="table-view" fx:id="clubTable" prefHeight="300.0" prefWidth="769.0" stylesheets="@../StyleSheets/style.css" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="colAct" maxWidth="3000.0" prefWidth="75.0" text="Activité" />
+                        <TableColumn fx:id="colNom" prefWidth="100.0" text="Nom du parent" />
+                        <TableColumn fx:id="colNumtel" maxWidth="6000.0" prefWidth="75.0" text="Numéro téléphone" />
+                        <TableColumn fx:id="colEmail" maxWidth="3000.0" prefWidth="60.0" text="Email" />
+                        <TableColumn fx:id="colAdresse" maxWidth="4000.0" prefWidth="75.0" text="Adresse" />
+                  <TableColumn fx:id="colNomenfant" prefWidth="75.0" text="Nom enfant" />
+                        <TableColumn fx:id="colImage" maxWidth="3000.0" prefWidth="130.0" text="Image" />
+                        <TableColumn fx:id="colAge" maxWidth="3000.0" prefWidth="75.0" text="Age" />
+                        <TableColumn fx:id="colNbmois" prefWidth="75.0" text="Nombre de mois de participation" />
+                        <TableColumn fx:id="colDated" maxWidth="3000.0" prefWidth="75.0" text="Date début" />
+                        <TableColumn fx:id="colMontantp" prefWidth="75.0" text="Montant à payer" />
+                        <TableColumn fx:id="colComm" prefWidth="75.0" text="Commentaire" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                    </VBox.margin>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem fx:id="deleteUsers" mnemonicParsing="false" onAction="#deleteUsers" text="Delete" />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </TableView>
+                <Label prefHeight="104.0" prefWidth="635.0" style="-fx-background-color: pink;" text="Espace Demande Inscription" textFill="#e10ab2">
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="50.0" right="168.0" top="70.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

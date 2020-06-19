@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="ancrelist" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Back_ListeJardinController">
+   <children>
+
+      <VBox layoutX="97.0" layoutY="24.0" spacing="4.0" />
+      <VBox layoutX="9.0" layoutY="28.0" prefWidth="67.0" spacing="12.0" />
+      <Separator layoutY="-1.0" prefHeight="4.0" prefWidth="600.0" />
+      <TableView fx:id="jardinTable" editable="true" layoutX="6.0" layoutY="102.0" prefHeight="301.0" prefWidth="588.0" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="29.0" text="" visible="false" />
+            <TableColumn fx:id="imageColumn" prefWidth="85.0" text="Icon" />
+            <TableColumn fx:id="nomColumn" prefWidth="89.0" text="Nom" />
+            <TableColumn fx:id="adresseColumn" prefWidth="91.0" text="Adresse" />
+            <TableColumn fx:id="placeColumn" prefWidth="78.0" text="Place Dispo" />
+            <TableColumn fx:id="nombreColumn" minWidth="0.0" prefWidth="98.0" text="Nombre Enfant" />
+            <TableColumn fx:id="telColumn" prefWidth="133.0" text="Télèphone" />
+        </columns>
+      </TableView>
+      <Button fx:id="btAjout" layoutX="461.0" layoutY="410.0" mnemonicParsing="false" onAction="#ajouterJardin" prefHeight="25.0" prefWidth="134.0" text="Ajouter jardin" />
+     
+  <TextField fx:id="tfrecherche" layoutX="8.0" layoutY="39.0" onKeyTyped="#rechercherNom" prefHeight="31.0" prefWidth="588.0" promptText=" recherche par nom jardin" style="-fx-background-color: #d7d9e0;">
+
+       </TextField>
+      <Button fx:id="bmodif" layoutX="323.0" layoutY="410.0" mnemonicParsing="false" onAction="#modifjardin" prefHeight="25.0" prefWidth="134.0" text="modifier" />
+      <Button fx:id="suppmodif" layoutX="185.0" layoutY="410.0" mnemonicParsing="false" onAction="#supprimerjardin" prefHeight="25.0" prefWidth="134.0" text="supprimer" />
+   </children>
+</AnchorPane>

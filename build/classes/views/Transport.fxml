@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransportController">
+   <children>
+      <JFXTabPane prefHeight="725.0" prefWidth="828.0">
+         <tabs>
+            <Tab text="Chauffeur">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="nomTxt" focusColor="#556eb9" labelFloat="true" layoutX="44.0" layoutY="134.0" prefHeight="30.0" prefWidth="201.0" promptText="Nom" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="prenomTxt" focusColor="#556eb9" labelFloat="true" layoutX="44.0" layoutY="192.0" prefHeight="30.0" prefWidth="201.0" promptText="PreNom" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="cinTxt" focusColor="#556eb9" labelFloat="true" layoutX="44.0" layoutY="253.0" prefHeight="30.0" prefWidth="201.0" promptText="CIN" unFocusColor="#c332a8" />
+                        <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="344.0" onAction="#onAjouterAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #d036b4;" text="Ajouter" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="164.0" layoutY="344.0" onAction="#onModifierChauffeurAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #197976;" text="Modifier" textFill="WHITE" />
+                        <TableView fx:id="tableChauffeur" layoutX="296.0" layoutY="103.0" prefHeight="389.0" prefWidth="524.0">
+                          <columns>
+                            <TableColumn fx:id="nom" prefWidth="109.0" text="Nom" />
+                            <TableColumn fx:id="prenom" prefWidth="143.0" text="Prenom" />
+                              <TableColumn fx:id="cin" prefWidth="135.0" text="Cin" />
+                              <TableColumn fx:id="col_action" prefWidth="135.0" text="Action" />
+                          </columns>
+                        </TableView>
+                        <JFXTextField fx:id="search" focusColor="#556eb9" labelFloat="true" layoutX="585.0" layoutY="38.0" promptText="Chercher par nom" unFocusColor="#c332a8" />
+                        <FontAwesomeIcon fill="#c332a8" iconName="SEARCH" layoutX="549.0" layoutY="59.0" size="2em" wrappingWidth="18.142857551574707" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Bus">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="matriculeTxt" focusColor="#556eb9" labelFloat="true" layoutX="84.0" layoutY="73.0" promptText="matricule" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="marqueTxt" focusColor="#556eb9" labelFloat="true" layoutX="84.0" layoutY="124.0" promptText="marque" unFocusColor="#c332a8" />
+                        <Label layoutX="46.0" layoutY="191.0" prefHeight="29.0" prefWidth="241.0" text="Selectionner Chauffeur">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableChauffeurBus" layoutX="33.0" layoutY="247.0" prefHeight="170.0" prefWidth="278.0">
+                          <columns>
+                            <TableColumn fx:id="nomC" prefWidth="93.0" text="nom" />
+                            <TableColumn fx:id="prenomC" prefWidth="89.0" text="prenom" />
+                              <TableColumn fx:id="cinC" prefWidth="94.0" text="cin" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableBus" layoutX="460.0" layoutY="41.0" prefHeight="275.0" prefWidth="311.0">
+                          <columns>
+                            <TableColumn fx:id="matricule" prefWidth="118.0" text="matricule" />
+                            <TableColumn fx:id="marque" prefWidth="87.0" text="marque" />
+                              <TableColumn fx:id="actionBus" prefWidth="104.0" text="Action" />
+                          </columns>
+                        </TableView>
+                        <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="467.0" onAction="#onModifierBusAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #197976;" text="Modifier" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="46.0" layoutY="467.0" onAction="#onAjouterBusAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #d036b4;" text="Ajouter" textFill="WHITE" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Ligne">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="pointDepartTxt" focusColor="#556eb9" labelFloat="true" layoutX="53.0" layoutY="50.0" promptText="point de depart" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="poitArriveTxt" focusColor="#556eb9" labelFloat="true" layoutX="53.0" layoutY="99.0" promptText="point d'arrive" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="NomLigneTxt" focusColor="#556eb9" labelFloat="true" layoutX="53.0" layoutY="151.0" promptText="Nom" unFocusColor="#c332a8" />
+                        <JFXTextField fx:id="placeDispoTxt" focusColor="#556eb9" labelFloat="true" layoutX="53.0" layoutY="296.0" promptText="places disponibles" unFocusColor="#c332a8" />
+                        <Label layoutX="45.0" layoutY="352.0" prefHeight="29.0" prefWidth="241.0" text="Selectionner Bus">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableBusLigne" layoutX="47.0" layoutY="395.0" prefHeight="143.0" prefWidth="189.0">
+                          <columns>
+                            <TableColumn fx:id="matriculeBusLigne" prefWidth="95.0" text="matricule" />
+                            <TableColumn fx:id="marqueBusLigne" prefWidth="91.0" text="marque" />
+                          </columns>
+                        </TableView>
+                        <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="569.0" onAction="#onAjouterLigneAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #d036b4;" text="Ajouter" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" layoutX="187.0" layoutY="569.0" onAction="#onModifierLigneAction" prefHeight="42.0" prefWidth="110.0" ripplerFill="WHITE" style="-fx-background-color: #197976;" text="Modifier" textFill="WHITE" />
+                        <TableView fx:id="tableLigne" layoutX="266.0" layoutY="39.0" prefHeight="472.0" prefWidth="561.0">
+                          <columns>
+                            <TableColumn fx:id="pointDepart" prefWidth="93.0" text="pointDepart" />
+                            <TableColumn fx:id="pointArriver" prefWidth="93.0" text="pointArriver" />
+                              <TableColumn fx:id="dateDepart" prefWidth="149.0" text="dateDepart" />
+                              <TableColumn fx:id="nomLigne" prefWidth="68.0" text="nom" />
+                              <TableColumn fx:id="placesDispo" prefWidth="79.0" text="placesDispo" />
+                              <TableColumn fx:id="actionLigne" prefWidth="94.0" text="action" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="45.0" layoutY="238.0" prefHeight="0.0" prefWidth="42.0" text="Heure : " />
+                        <TextField fx:id="heure" layoutX="92.0" layoutY="234.0" prefHeight="25.0" prefWidth="33.0" />
+                        <Label layoutX="140.0" layoutY="238.0" text="Minute : " />
+                        <TextField fx:id="minute" layoutX="203.0" layoutY="234.0" prefHeight="25.0" prefWidth="33.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

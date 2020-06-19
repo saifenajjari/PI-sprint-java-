@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login1Controller">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1181.0" layoutX="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/photo-1434030216411-0b793f4b4173.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="227.0" fitWidth="201.0" layoutX="1016.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Uploads/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="553.0" layoutY="105.0" prefHeight="35.0" prefWidth="218.0" text="Authentification" textAlignment="CENTER" textFill="#e10ab2">
+         <font>
+            <Font name="Bell MT Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passeword" layoutX="538.0" layoutY="246.0" prefHeight="25.0" prefWidth="201.0" promptText="Mot De Passe" style="-fx-background-color: pink;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="538.0" layoutY="178.0" prefHeight="25.0" prefWidth="201.0" promptText="Nom D'utilisateur" style="-fx-background-color: pink;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Compte" layoutX="161.0" layoutY="528.0" mnemonicParsing="false" onAction="#choix" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: #e10ab2;" text="Creer Un Compte" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Login" layoutX="578.0" layoutY="339.0" mnemonicParsing="false" onAction="#authentification" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #e10ab2;" text="CONNECTER" />
+      <Hyperlink layoutX="1053.0" layoutY="532.0" text="Mot De Passe Oublié ?" textFill="#e10ab2" />
+   </children>
+</AnchorPane>

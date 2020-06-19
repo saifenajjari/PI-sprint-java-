@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="232.0" style="-fx-border-color: pink; -fx-border-insets: 5; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SingleLigneController">
+   <children>
+      <Label layoutX="14.0" layoutY="27.0" prefHeight="36.0" prefWidth="123.0" text="Point de depart : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="PointDepartLabel" layoutX="129.0" layoutY="27.0" prefHeight="36.0" prefWidth="94.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="78.0" prefHeight="36.0" prefWidth="108.0" text="Point d'arrivé :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointArriveLabel" layoutX="122.0" layoutY="78.0" prefHeight="36.0" prefWidth="94.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="204.0" prefHeight="36.0" prefWidth="142.0" text="Nom : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="NomLabel" layoutX="71.0" layoutY="204.0" prefHeight="36.0" prefWidth="158.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="250.0" prefHeight="36.0" prefWidth="108.0" text="PlacesDispo :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="NombrePlaceLabel" layoutX="109.0" layoutY="250.0" prefHeight="36.0" prefWidth="41.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="10.0" layoutY="293.0" prefHeight="6.0" prefWidth="203.0" />
+      <JFXButton fx:id="reserverBtn" buttonType="RAISED" layoutX="52.0" layoutY="309.0" prefHeight="45.0" prefWidth="129.0" ripplerFill="WHITE" style="-fx-background-color: #cd6bd6;" text="Reserver" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="139.0" prefHeight="36.0" prefWidth="63.0" text="Temps :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelHeure" layoutX="85.0" layoutY="139.0" prefHeight="36.0" prefWidth="17.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelHeure1" layoutX="103.0" layoutY="139.0" prefHeight="36.0" prefWidth="17.0" text=":">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMinute" layoutX="109.0" layoutY="139.0" prefHeight="36.0" prefWidth="41.0" textFill="#a00fab">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
